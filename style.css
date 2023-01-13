@@ -86,7 +86,7 @@ a {
 	display: none;
 }
 
-label  {
+.nav-button  {
 	display: none;
 } 
 
@@ -147,9 +147,9 @@ label  {
 		margin-top: 1em;
 	}
 
-	.nav-disclosure-button {
+	.nav-button {
 		cursor: pointer;
-		visibility: visible;
+		display: block;
 	}
 
 } 
