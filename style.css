@@ -77,9 +77,8 @@ a {
 	display: none;
 }
 
-.nav-menu label {
-	visibility: hidden;
-	position: relative;
+.nav-icon {
+	display: none;
 	
 }
 
@@ -87,11 +86,19 @@ a {
 	display: none;
 }
 
+label  {
+	display: none;
+} 
+
 #open {
 	display: none;
 }
 
 @media (max-width: 600px) {
+
+	label {
+		display: block; 
+	}
 
 	#open:checked ~ .nav-items {
 		right: 1em;
@@ -140,7 +147,7 @@ a {
 		margin-top: 1em;
 	}
 
-	.nav-menu label {
+	.nav-disclosure-button {
 		cursor: pointer;
 		visibility: visible;
 	}
