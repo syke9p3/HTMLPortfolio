@@ -1,0 +1,148 @@
+*, ::before, ::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0
+}
+
+body {
+	font-family: 'Poppins', sans-serif;
+	background-color: rgb(35, 35, 37);
+	color: white;
+	font-size: 16px;
+}
+
+ul {
+	margin: 0;
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+}
+
+.nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	/* background-color: blueviolet; */
+	padding: 1em 2em;
+	position: fixed;
+	width: 100%;
+}
+
+.nav-logo {
+	font-size: 30px;	
+	padding: 0 0.5em;
+	color: rgb(255, 119, 119); 
+
+}
+
+.nav-items {
+	display: flex;
+	/* background-color: red; */
+}
+
+.nav-item{
+	position: relative;
+	padding:0.25em
+}
+
+.nav-item .active {
+	color: rgb(253, 136, 136);  
+	font-weight: bold;
+}
+
+.nav-item::after {
+	content: "";
+	background-color: rgb(253, 136, 136);  
+	position: absolute;
+	height: 3px;
+	width: 0%;
+	left: 0;
+	bottom: -0.5rem;
+	transition: all 300ms ease;
+}
+
+.nav-item:hover::after {
+	width: 100%;
+}
+
+.nav-item + .nav-item {
+	/* background-color: cyan; */
+	margin-left: 2em;
+}
+
+.nav-menu {
+	display: none;
+}
+
+.nav-menu label {
+	visibility: hidden;
+	position: relative;
+	
+}
+
+.nav-menu input{
+	display: none;
+}
+
+#open {
+	display: none;
+}
+
+@media (max-width: 600px) {
+
+	#open:checked ~ .nav-items {
+		right: 1em;
+	}
+
+	#open:not(checked) ~ label .x {
+		display: none;
+	}
+
+	#open:checked ~ label .x {
+		display: block;
+	} 
+
+	#open:checked ~ label .hamburger {
+		display: none;
+	} 
+
+
+	.nav {
+		padding: 1em 1em;
+	}
+
+	.nav-menu {
+		display: block;
+	}
+
+	.nav-items {
+		/* visibility: hidden; */
+		display: block;
+		position: fixed;
+		padding: 1.5em 2em 2em 1.5em;
+		top: 4em;
+		right: -10em;
+		transition: right 300ms ease;
+		background-color: rgb(99, 72, 72);
+	}
+
+	.nav-item {
+		padding: 0.25em 1em;
+		display: block;
+		cursor: pointer;
+	}
+
+	.nav-item + .nav-item {
+		margin-left: 0;
+		margin-top: 1em;
+	}
+
+	.nav-menu label {
+		cursor: pointer;
+		visibility: visible;
+	}
+
+} 
