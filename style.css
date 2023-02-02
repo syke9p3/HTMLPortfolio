@@ -10,6 +10,11 @@
 	padding: 0
 }
 
+html {
+	scroll-behavior: smooth;
+	scroll-padding-top: 1em; 
+}
+
 body {
 	font-family: 'Poppins', sans-serif;
 	background-color: rgb(35, 35, 37);
@@ -33,10 +38,12 @@ main {
 }
 
 section {
-	padding: 5em 0;
+	padding: 7.5em 0;
 	background-color: rgb(27, 27, 27);
+	min-height: 628px;
 
 }
+
 /* TYPOGRAPHY */
 
 h1 {
