@@ -611,7 +611,10 @@ footer {
         flex-direction: column;
     }
 
-
+    .btn {
+        min-width: 150px;
+        padding: 0.75em 1em;
+    }
 
 
 
