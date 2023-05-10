@@ -220,7 +220,7 @@ h1 {
 }
 
 .banner-button:hover {
-    background-color: rgb(202, 39, 39);
+    background-color: rgb(186, 28, 28);
 }
 
 .banner-img-container {
@@ -265,7 +265,7 @@ h1 {
 
 .section-text p {
     /* text-align: center; */
-    color: #ffffff9c;
+    color: #ffffffc2;
 }
 
 .about-content {
@@ -285,7 +285,7 @@ h1 {
 }
 
 .about-detail b {
-    color: white;
+    color: rgba(255, 255, 255, 0.87);
 }
 
 .about-img {
@@ -311,7 +311,11 @@ h1 {
 .social-media-icons a img {
     width: 30px;
     height: 30px;
+    transition: all 200ms ease;
 
+}
+.social-media-icons a img:hover {
+    filter: brightness(1.25);
 }
 
 
@@ -350,14 +354,6 @@ h1 {
 
 }
 
-.card#webdev {
-    background-color: #872424;
-}
-
-.card#webdev h3 {
-    color: white;
-}
-
 .card h3 {
     text-transform: uppercase;
     letter-spacing: 0.05em;
@@ -370,16 +366,35 @@ h1 {
     justify-self: flex-end;
 }
 
+.software-icons {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 3em;
+}
+
+.software-icons div {
+    padding: 0.5em;
+
+}
+
+.software-icons img {
+    height: 30px;
+
+}
+
+
 section.projects {
     background-color: #110D0D;
 }
 
 .projects-container {
     display: flex;
-    justify-content: center;
+    justify-content: start;
     flex-wrap: wrap;
     font-size: 0.8em;
-    min-height: 600px;
+    min-height: 500px;
 }
 
 .col {
@@ -401,7 +416,8 @@ section.projects {
     /* border: 1px solid #e55151; */
     border: none;
     cursor: pointer;
-    min-width: 300px;
+    min-width: 20%;
+    transition: all 75ms ease-in;
 }
 
 .btn:hover {
@@ -472,7 +488,6 @@ section.projects {
   
 footer {
     padding: 1em 2em;
-    padding-top: 2px;
     text-align: center;
     font-size: small;
     color: #9CA3AF;
@@ -483,7 +498,9 @@ footer {
 
 .footer-text {
     display: flex;
+    justify-content: space-between;
     align-items: center;
+    width: 100%;
     gap: 1em;
 }
 
@@ -611,8 +628,13 @@ footer {
         flex-direction: column;
     }
 
+    .projects-container {
+        justify-content: center;
+    }
+
     .btn {
-        min-width: 150px;
+        font-size: smaller;
+        min-width: 20%;
         padding: 0.75em 1em;
     }
 
