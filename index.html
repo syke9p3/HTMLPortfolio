@@ -2,175 +2,365 @@
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="icon" type="image/x-icon" href="favicon.ico">
-	<meta property='og:title' content='Syke Portfolio | Cybersec' />
-	<meta property='og:image' content='thumbs.png'/>
-<meta property='og:description' content='Syke Cybersec Portfolio' />
-	<meta property='og:url' content='https://syke9p3.github.io/cybersec-port/' />
-	<meta property='og:image:width' content='1200' />
-	<meta property='og:image:height' content='627' />
-	<meta property="og:type" content='website'/>
-	<title>Syke Portfolio | Cybersec</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <meta property='og:title' content='Syke Portfolio ' />
+    <meta property='og:image' content='thumbs.png' />
+    <meta property='og:description' content='Syke Portfolio' />
+    <meta property='og:url' content='https://syke9p3.github.io/cybersec-port/' />
+    <meta property='og:image:width' content='1200' />
+    <meta property='og:image:height' content='627' />
+    <meta property="og:type" content='website' />
+    <title>Syke Portfolio | Cybersec</title>
 
-	<link rel="stylesheet" href="style.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
-	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"> -->
 </head>
 
 
-<script>
 
-	$(document).ready(function () {
-		$(window).scroll(function () {
-			var scroll = $(window).scrollTop();
-			console.log(scroll)
-
-			if (scroll > 125) {
-				$(".header").css("background", "rgb(27, 27, 27)");
-			}
-
-			else {
-				$(".header").css("background", "#00000000");
-			}
-		})
-	})
-</script>
 
 <body>
-	<header class="header">
-		<nav class="nav container">
-			<div>
-				<a href="" class="nav-logo">
-					Syke
-				</a>
-			</div>
-			<input type="checkbox" name="open" id="open">
-			<label for="open" class="nav-button">
-				<i class="nav-icon fa-sharp fa-solid fa-bars fa-xl hamburger"></i>
-				<i class="nav-icon fa-solid fa-xmark fa-2xl x"></i>
-			</label>
-			<ul class="nav-items">
-				<a href="#" class="nav-item">
-					<li class="active">Home</li>
-				</a>
-				<a href="#about" class="nav-item">
-					<li>About</li>
-				</a>
-				<a href="#services" class="nav-item">
-					<li>Services</li>
-				</a>
-			</ul>
-		</nav>
-	</header>
-	<main>
-		<section class="banner">
-			<div class="section-content banner-content container">
-				<div class="banner-text">
-					<h1>Hello, I'm <span>Kenth</span></h1>
-					<p>As a CS student, I'm passionate about expanding my tech knowledge and am currently focusing on
-						web development with HTML, CSS, and JS, learning from free online resources <br>
-						...and having fun with random lorem ipsum generators.
-					</p>
-					<!-- <p class="false"><i>This normal looking website totally does not have any kind of button that will
-							download a fake virus on your computer. Also this green message does not appear to be
-							suspicious at all so click the button down below to see more details!</i>
-					</p> -->
+    <header class="header">
+        <nav class="nav container">
+            <div>
+                <a href="#" class="nav-logo">
+                    Syke
+                </a>
+            </div>
+            <input type="checkbox" name="open" id="open">
+            <label for="open" class="nav-button">
+                <i class="nav-icon fa-sharp fa-solid fa-bars fa-xl hamburger"></i>
+                <i class="nav-icon fa-solid fa-xmark fa-2xl x"></i>
+            </label>
+            <ul class="nav-items">
+                <a href="#" class="nav-item">
+                    <li>Home</li>
+                </a>
+                <a href="#about" class="nav-item">
+                    <li>About</li>
+                </a>
+                <a href="#services" class="nav-item">
+                    <li>Services</li>
+                </a>
+                <a href="#projects" class="nav-item">
+                    <li>Projects</li>
+                </a>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="banner">
+            <div class="section-content banner-content container">
+                <div class="banner-text">
+                    <h1>Hello, I'm <span>Kenth</span></h1>
+                    <p>As a Computer Science student, I am passionate about constantly learning and expanding my
+                        knowledge of technology. Currently, I am focused on practicing web development using React JS,
+                        utilizing a variety of free online resources to further develop my skills. <br>
 
-					<a download href="Saya-ang_Kenth_BSCS 3-1N.exe" class="banner-button">Download CV</a>
-				</div>
-				<div class="banner-img-container">
-					<!-- <div class="banner-img-bg"></div> -->
-					<img src="syke.png" alt="Syke" class="banner-img">
-				</div>
+                    </p>
 
-			</div>
-		</section>
-		<section class="about" id="about">
-			<div class="section-content container">
-				<div class="section-text">
-					<h1 class="section-heading">About Me</h1>
-					<p>As a ninja in disguise, I seek to hone my programming justu through strategic and intensive
-						training with the guidance and discipline from my Sensei. I set my sights on mastering the
-						mystic arts of web development, blazing through the sacred texts of HTML, CSS, and the almighty
-						JavaScript. I venture forth into this unknown dimension called <b>real life</b> as I gain wisdom
-						from the legendary sages of the internet.</p>
-					<br>
-					<ul class="nenja">
-						<li class="ninja">#ThePathToMastery</li>
-						<li class="ninja">#WebNinja</li>
-						<li class="ninja">#LoremIpsumJustu</li>
-					</ul>
+                    <a href="#about" class="banner-button">About Me</a>
+                </div>
+                <div class="banner-img-container">
+                    <img src="syke.png" alt="Syke" class="banner-img">
+                </div>
 
-				</div>
-				<!-- <div>
-					<div>
-						<h3>Name</h3>
-						<p>Kenth G. Saya-ang</p>
-					</div>
-				</div> -->
-				<!-- <div class="cards-container">
-					<div class="card">
-						<h3>Feature Title 1</h3>
-						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis quae cum ab dolorum repellendus error sint nihil? Ad, hic eius.</p>
-					</div>
-				</div> -->
+            </div>
+        </section>
+        <section class="about" id="about">
+            <div class="section-content container">
+                <div class="section-text">
 
-		</section>
-		<section class="services" id="services">
-			<div class="section-content container">
-				<div class="section-text">
-					<h1 class="section-heading">Services</h1>
-					<!-- <p>We continuously desire to provide the best experience services Satisfied clients</p> -->
-				</div>
-				<div class="cards-container">
-					<div class="card">
-						<h3>UI/UX Design</h3>
-						<img src="ui.svg" class="svg" />
-						<p><i>"Can you make the logo bigger yes bigger bigger still the logo is too big I think we need
-								to start from scratch, but give us a complimentary logo along with the website."</i>
-						</p>
-					</div>
-					<div class="card">
-						<h3>WEB Development</h3>
-						<img src="wbrowser.svg" class="svg" />
-						<p><i>"The website doesn't have the theme i was going for thats not what i saw in my head at
-								all, so something summery; colourful. Why is a 15mb gif on the startpage a bad
-								idea?!"</i> </p>
-					</div>
-					<div class="card">
-						<h3>Illustration</h3>
-						<img src="design2.svg" class="svg" />
-						<p><i>"Can you turn it around in Photoshop so we can see more of the front, yet can we have
-								another option can you help me out? You will get a lot of free exposure doing this!"</i>
-						</p>
-					</div>
-				</div>
-		</section>
-		<!-- <section class="banner">
-			 <div class="banner-content container">
-				<div class="banner-text">
-					<h1>Hello, I'm <span>Kenth</span></h1>
-					<p>As a CS student, I'm passionate about expanding my tech knowledge and am currently focusing on
-						web development with React JS, learning from free online resources.</p>
-					<a href="" download class="banner-button">Download CV</a>
-				</div>
-			 <div class="banner-img-container">
-					<div class="banner-img-bg"></div>
-					<img src="syke.png" alt="UX design sketches" class="banner-img">
-				</div>
+                    <div class=" about-content">
+                        <div>
+                            <img src="syke_ninja.jpg" class="about-img" alt="">
+                        </div>
+                        <div>
+                            <h1 class="section-heading">About Me</h1>
+                            <p>As a <b>ninja in disguise</b>, I seek to hone my programming justu through strategic and
+                                intensive
+                                training with the guidance and discipline from my Sensei. I set my sights on mastering
+                                the
+                                mystic arts of web development, blazing through the sacred texts of HTML, CSS, and the
+                                almighty
+                                JavaScript.</p>
+                            <br>
+                            <div class="about-details">
+                                <div>
+                                    <ul class="">
+                                        <li class="about-detail"><b>Name:</b> Kenth G. Saya-ang</li>
+                                        <li class="about-detail"><b>Age:</b> 21</li>
+                                        <li class="about-detail"><b>Location:</b> Taguig City, Philippines</li>
+                                        <li class="about-detail"><b>Gender:</b> Male</li>
+                                        <li class="about-detail"><b>Phone:</b> +6394365377</li>
+                                        <li class="about-detail"><b>Email:</b> gargarkenth93@gmail.com</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <ul class="social-media-icons">
+                                        <a href="https://www.facebook.com/kgsayaang" target="_blank">
+                                            <img src="https://cdn-icons-png.flaticon.com/512/124/124010.png" alt=""
+                                                style="background-color: white; outline: 0.1px solid rgb(21, 54, 152);">
+                                        </a>
+                                        <a href="https://twitter.com/syke9p3" target="_blank">
+                                            <img src="https://cdn-icons-png.flaticon.com/512/124/124021.png" alt="">
+                                        </a>
+                                        <a href="https://www.instagram.com/syke_9p3/" target="_blank">
+                                            <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="">
+                                        </a>
+                                        <a href="https://www.linkedin.com/in/kenth-s-614606112/" target="_blank">
+                                            <img src="https://www.shareicon.net/data/256x256/2015/09/30/109347_media_512x512.png"
+                                                alt="">
+                                        </a>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-			</div> -->
-		</section>
+                </div>
+        </section>
+        <section class="services" id="services">
+            <div class="section-content container">
+                <div class="section-text">
+                    <h1 class="section-heading">Services</h1>
+                </div>
+                <div class="cards-container">
+                    <div class="card">
+                        <h3>UI/UX Design</h3>
+                        <img src="ui.svg" class="svg" />
+                        <p><i>Basic understanding of Figma's interface and tools, able to create simple wireframes and
+                                mockups. Familiarity with basic features such as working with layers, creating and
+                                manipulating shapes, and using basic design elements.</i>
+                        </p>
+                    </div>
+                    <div class="card" id="webdev">
+                        <h3>WEB Development</h3>
+                        <img src="wbrowser.svg" class="svg" />
+                        <p><i>"The website doesn't have the theme i was going for thats not what i saw in my head at
+                                all, so something summery; colourful. Why is a 15mb gif on the startpage a bad
+                                idea?!"</i> </p>
+                    </div>
+                    <div class="card">
+                        <h3>Illustration</h3>
+                        <img src="design2.svg" class="svg" />
+                        <p><i>"Can you turn it around in Photoshop so we can see more of the front, yet can we have
+                                another option can you help me out? You will get a lot of free exposure doing this!"</i>
+                        </p>
+                    </div>
+                </div>
+        </section>
+        <section class="projects" id="projects">
+            <div class="section-content container">
+                <div class="section-text">
+                    <h1 class="section-heading">Projects</h1>
+                </div>
+                <div id="btn-container">
+                    <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+                    <button class="btn" onclick="filterSelection('website')"> Website</button>
+                    <button class="btn" onclick="filterSelection('illustration')">Illustration</button>
+                </div>
+                <div class="projects-container">
+                    <a class="col image-link website" >
+                        <div class="image-card">
+                            <div class="content">
+                                <p class="date">January, 2023</p>
+                                <p class="title">Syke Blog Site</p>
+                            </div>
+                            <img src="src/website/blog.PNG"  />
+                        </div>
+                    </a>
+                    <a class="col image-link website" >
+                        <div class="image-card">
+                            <div class="content">
+                                <p class="date">October, 2022</p>
+                                <p class="title">OGGLP Database Interface</p>
+                            </div>
+                            <img src="src/website/ogglp.png"  />
+                        </div>
+                    </a>
+                    <a class="col image-link illustration" >
+                        <div class="image-card">
+                            <div class="content">
+                                <p class="date">October, 2022</p>
+                                <p class="title">Jewel</p>
+                            </div>
+                            <img src="https://scontent.fmnl30-3.fna.fbcdn.net/v/t39.30808-6/312961663_2725619150901587_7336417063023284293_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=730e14&_nc_eui2=AeENcB24TEa6qa2R2Sf6U8YqKZpmlIs8VjEpmmaUizxWMWTISGdCk66ceJM6FCMHKPExbWkMvnmDQB9Qbs08K8s3&_nc_ohc=IeXCoUdU5ScAX8qnNN8&_nc_ht=scontent.fmnl30-3.fna&oh=00_AfCZYvz9ipA0OESyXMHV45riiitN6XlGNlHbmo3Bv2eJ1w&oe=64613ADC"  />
+                        </div>
+                    </a>
+                    <a class="col image-link illustration" >
+                        <div class="image-card">
+                            <div class="content">
+                                <p class="date">October, 2022</p>
+                                <p class="title">Live Your Dream</p>
+                            </div>
+                            <img src="https://scontent.fmnl30-1.fna.fbcdn.net/v/t39.30808-6/312935098_2725619064234929_8511092282881806376_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=730e14&_nc_eui2=AeHoNI9Fv26sFowIHNn-abBmeCAfuvMYNcZ4IB-68xg1xpFNJZSZoWwBbIiNaCSjsshMxveCdIfWEHofxQ-uLt7W&_nc_ohc=lfBRM_tNRKIAX8iV82W&_nc_ht=scontent.fmnl30-1.fna&oh=00_AfBhjdz3_PCwblT5j5g-bVBPf92DL5C6JZeKcuFGBs_5-Q&oe=64608B75"  />
+                        </div>
+                    </a>
+                    <a class="col image-link illustration" >
+                        <div class="image-card">
+                            <div class="content">
+                                <p class="date">June, 2022</p>
+                                <p class="title">Cookie</p>
+                            </div>
+                            <img src="https://scontent.fmnl30-2.fna.fbcdn.net/v/t39.30808-6/312920230_2725619087568260_1647277967484140261_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=730e14&_nc_eui2=AeFyS4faYBTWDfzq1pAzP7RcwzX9i6oWDfPDNf2LqhYN8-D382uWX6G8YZG99jqTOQZt5_FzOVyK34dNIN2OalgS&_nc_ohc=SXx9BdS_FTQAX9rcvgw&_nc_ht=scontent.fmnl30-2.fna&oh=00_AfBmfCHgnaXAjrLBdQuBWe20e6tIr8ssYkD4Q-OcM0xF2w&oe=6460297A"  />
+                        </div>
+                    </a>
+                    <a class="col image-link illustration" >
+                        <div class="image-card">
+                            <div class="content">
+                                <p class="date">March, 2022</p>
+                                <p class="title">Eggshie</p>
+                            </div>
+                            <img src="https://scontent.fmnl30-3.fna.fbcdn.net/v/t39.30808-6/312902021_2725618644234971_6852380069044703962_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=730e14&_nc_eui2=AeHqK3lcKM-FMnOWgm5wD4S7krHxu7ixiQuSsfG7uLGJC5LKzFfXdTJi1-W8CAiiFzyNeDE2QvSRGuxO2tx0nbUu&_nc_ohc=vAHjeA8YMlwAX9Hq5Di&_nc_ht=scontent.fmnl30-3.fna&oh=00_AfDUthSiXBSCZzPMxilRdfdT0CuZ_gI7x2IkHavLoHyFjg&oe=6460A026"  />
+                        </div>
+                    </a>
+                    <a href="https://codepen.io/Syke9p3/pen/OJzKNOr" target="_blank" class="col image-link website" >
+                        <div class="image-card">
+                            <div class="content">
+                                <p class="date">December 2021</p>
+                                <p class="title">Campany Landing Page</p>
+                            </div>
+                            <img src="src/website/campany.png"  />
+                        </div>
+                    </a>
+                    
+                    <a class="col image-link illustration" >
+                        <div class="image-card">
+                            <div class="content">
+                                <p class="date">November 2021</p>
+                                <p class="title">I Say Hi</p>
+                            </div>
+                            <img src="https://scontent.fmnl30-2.fna.fbcdn.net/v/t39.30808-6/306623014_2725618714234964_4258110738932815422_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=730e14&_nc_eui2=AeEjm4dwd6jdVKa_sgIIagH8aDHUyEI_2kBoMdTIQj_aQATaTMe96DJGM4tovFqLWUtu7v4WKDA7Akd4rYJG3qiT&_nc_ohc=VX-ml7TwVXsAX89qTaW&_nc_ht=scontent.fmnl30-2.fna&oh=00_AfCWeD8Y3HGEVcFUAX4txJK1CeRhO4zV_LStb-62Lkkwow&oe=646041BD"  />
+                        </div>
+                    </a>
+                    <a href="https://codepen.io/Syke9p3/pen/NWXyzZy" target="_blank" class="col image-link website" >
+                        <div class="image-card">
+                            <div class="content">
+                                <p class="date">May 2021</p>
+                                <p class="title">Survey Form</p>
+                            </div>
+                            <img src="src/website/survey.png"  />
+                        </div>
+                    </a>
+                    <a href="https://codepen.io/Syke9p3/pen/XWVVKYN" target="_blank" class="col image-link website" title=" image title">
+                        <div class="image-card">
+                            <div class="content">
+                                <p class="date">April 2021</p>
+                                <p class="title">Fourier Tribute Page</p>
+                            </div>
+                            <img src="src/website/bio.png"  />
+                        </div>
+                    </a>
+                    <a  class="col image-link website" title="Static Blog Page">
+                        <div class="image-card">
+                            <div class="content">
+                                <p class="date">March 2021</p>
+                                <p class="title">Static Blog Page</p>
+                            </div>
+                            <img src="src/website/lorem.png"  />
+                        </div>
+                    </a>
+                    <a  class="col image-link illustration" title="Static Blog Page">
+                        <div class="image-card">
+                            <div class="content">
+                                <p class="date">October 2020</p>
+                                <p class="title">Supling</p>
+                            </div>
+                            <img src="https://scontent.fmnl30-3.fna.fbcdn.net/v/t39.30808-6/312942601_2725619490901553_4574941522529836098_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=730e14&_nc_eui2=AeHEPvhCbNBOC47hIeIqIjzAvXThzKxXqLi9dOHMrFeouKrZN3b-TKRLVXtCEqQsMS-9FcDVKkbhvyODszkpXWs2&_nc_ohc=I6N24INRH0UAX_wjj5-&_nc_ht=scontent.fmnl30-3.fna&oh=00_AfBDd1JrbadbVkH_fbJ73cAdL61xRU5tbhoZ3r0Jux_cdg&oe=64611E1B"  />
+                        </div>
+                    </a>
+                </div>
+        </section>
 
-	</main>
-	<footer>
-
-	</footer>
+    </main>
+    <footer class="footer container">
+        <div class="footer-text">
+            <span class="name">Kenth Saya-ang</span>&copy; 2023 All Rights Reserved
+        </div>
+        <div class="social-media-links">
+            <a href="https://www.facebook.com/kgsayaang" title="Facebook: Kenth Saya-ang" target="_blank"
+                rel="noreferrer">
+                <i class="fab fa-facebook hover:text-sky-600"></i>
+            </a>
+            <a href="https://twitter.com/syke9p3" title="Twitter: @syke9p3" target="_blank" rel="noreferrer">
+                <i class="fab fa-twitter-circle hover:text-cyan-500"></i>
+            </a>
+            <a href="https://www.instagram.com/syke_9p3/" title="Instagram: @syke_9p3" target="_blank" rel="noreferrer">
+                <i class="fab fa-instagram hover:text-indigo-600"></i>
+            </a>
+        </div>
+    </footer>
 </body>
 
+
+<script>
+    //change navbar background color when scrolling
+    document.addEventListener("DOMContentLoaded", function () {
+        window.addEventListener("scroll", function () {
+            var scroll = window.pageYOffset || document.documentElement.scrollTop;
+            console.log(scroll);
+
+            if (scroll > 125) {
+                document.querySelector(".header").style.background = "#110d0d";
+            } else {
+                document.querySelector(".header").style.background = "#00000000";
+            }
+        });
+    });
+
+    filterSelection("all") // Execute the function and show all cols
+    function filterSelection(c) {
+        var x, i;
+        x = document.getElementsByClassName("col");
+        if (c == "all") c = "";
+        // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
+        for (i = 0; i < x.length; i++) {
+            RemoveClass(x[i], "show");
+            if (x[i].className.indexOf(c) > -1) AddClass(x[i], "show");
+        }
+    }
+
+    // Show filtered elements
+    function AddClass(element, name) {
+        var i, arr1, arr2;
+        arr1 = element.className.split(" ");
+        arr2 = name.split(" ");
+        for (i = 0; i < arr2.length; i++) {
+            if (arr1.indexOf(arr2[i]) == -1) {
+                element.className += " " + arr2[i];
+            }
+        }
+    }
+
+    // Hide elements that are not selected
+    function RemoveClass(element, name) {
+        var i, arr1, arr2;
+        arr1 = element.className.split(" ");
+        arr2 = name.split(" ");
+        for (i = 0; i < arr2.length; i++) {
+            while (arr1.indexOf(arr2[i]) > -1) {
+                arr1.splice(arr1.indexOf(arr2[i]), 1);
+            }
+        }
+        element.className = arr1.join(" ");
+    }
+
+    // Add active class to the current button (highlight it)
+    var btnContainer = document.getElementById("btn-container");
+    var btns = btnContainer.getElementsByClassName("btn");
+    for (var i = 0; i < btns.length; i++) {
+        btns[i].addEventListener("click", function () {
+            var current = document.getElementsByClassName("active");
+            current[0].className = current[0].className.replace(" active", "");
+            this.className += " active";
+        });
+    }
+
+</script>
 
 
 
