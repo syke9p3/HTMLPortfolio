@@ -13,7 +13,7 @@ Name: Kenth Saya-ang
 2. CSS - mobile-first approach 
 3. Fade Animation on load
 4. Consider adding a content management system
-5. 
+5. NavBar active
 
 
 ## Features to add
