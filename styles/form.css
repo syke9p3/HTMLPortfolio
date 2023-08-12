@@ -114,7 +114,7 @@ label {
 }
 
 textarea {
-    min-height: 12rem;
+    min-height: 6rem;
     padding: 0.625rem;
     resize: vertical;
     font-family: inherit;

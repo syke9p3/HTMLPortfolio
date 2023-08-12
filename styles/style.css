@@ -365,6 +365,10 @@ section.projects {
     visibility: hidden;
 }
 
+a:not([href]) {
+ cursor: none;
+}
+
 
 .show {
     position: static;
@@ -375,6 +379,7 @@ section.projects {
 
 .image-link {
     margin: 1em;
+    
 }
 
 .image-card {
@@ -463,7 +468,6 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap:1rem;
 }
 
 .footer-socials a {
